@@ -7,15 +7,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Hello world!
+ * Maven projekt main osztály
  *
  */
 public class App 
 {
+
+    /**
+     * Main metódus
+     * Beolvassa a persons.txt-ből a tárolt adatokat, majd eltárolha
+     * óket egy Person arraylistben, végül pedig meghívja a Person
+     * getFullName metódusát az összesre és kiírja az így visszakapott
+     * sztringet.
+     */
     public static void main( String[] args )
     {
         String personsCSV = "/Users/dradnek/maven/first-mavenapp/src/main/resources/persons.txt";
-        String line = "";
+        String line;
         String splitBy = ",";
         List<Person> people = new ArrayList<>();
 
