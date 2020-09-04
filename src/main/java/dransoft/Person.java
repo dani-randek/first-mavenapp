@@ -1,9 +1,9 @@
 package dransoft;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor(staticName = "of")
+@AllArgsConstructor
 public class Person {
 
     /**
@@ -18,12 +18,6 @@ public class Person {
      *Az adott ember születési éve
      */
     @Getter private int yob;
-
-    public Person(String last, String first, int year){
-        lastName = last;
-        firstName = first;
-        yob = year;
-    }
 
     /**
      *Visszaadja az adott ember vezetéknevét és keresztnevét, egy szóközzel elválasztva
