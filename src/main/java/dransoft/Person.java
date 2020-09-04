@@ -10,6 +10,12 @@ public class Person {
     @Getter private String lastName;
     @Getter private int yob;
 
+    public Person(String last, String first, int year){
+        lastName = last;
+        firstName = first;
+        yob = year;
+    }
+
     public String getFullName(){
         return lastName + " " + firstName;
     }
