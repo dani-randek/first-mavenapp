@@ -1,0 +1,3 @@
+Randek,Dániel,1994
+Kiss,Pista,1970
+Nagy,Lajos,1326
