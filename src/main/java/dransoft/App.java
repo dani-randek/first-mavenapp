@@ -13,7 +13,7 @@ public class App
 {
 
     /**
-     * Main metódus
+     * A program main metódusa
      * Beolvassa a persons.txt-ből a tárolt adatokat, majd eltárolha
      * óket egy Person arraylistben, végül pedig meghívja a Person
      * getFullName metódusát az összesre és kiírja az így visszakapott
