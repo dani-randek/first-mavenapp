@@ -20,7 +20,7 @@ public class App
      * sztringet.
      */
     public static void main( String[] args ) throws FileNotFoundException {
-        String personsCSV = "/Users/dradnek/maven/first-mavenapp/src/main/resources/persons.txt";
+        String personsCSV = "src/main/resources/persons.txt";
         File personFile = new File(personsCSV);
         List<Person> people = new ArrayList<>();
         Scanner scanner = new Scanner(personFile);
