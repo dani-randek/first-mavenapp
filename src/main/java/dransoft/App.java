@@ -4,6 +4,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Maven projekt main osztály
@@ -20,6 +22,7 @@ public class App
      * sztringet.
      */
     public static void main( String[] args ) throws FileNotFoundException {
+        Logger logger = LoggerFactory.getLogger(App.class);
         String personsCSV = "src/main/resources/persons.txt";
         File personFile = new File(personsCSV);
         List<Person> people = new ArrayList<>();
@@ -37,7 +40,7 @@ public class App
         scanner.close();
 
         for (Person p : people) {
-            System.out.println(p.getFullName());
+            logger.info(p.getFullName());
         }
     }
 }
