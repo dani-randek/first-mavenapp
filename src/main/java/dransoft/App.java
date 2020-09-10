@@ -23,7 +23,7 @@ public class App
      */
     public static void main( String[] args ) throws FileNotFoundException {
         Logger logger = LoggerFactory.getLogger(App.class);
-        String personsCSV = "src/main/resources/persons.txt";
+        String personsCSV = "persons.txt";
         File personFile = new File(personsCSV);
         List<Person> people = new ArrayList<>();
         Scanner scanner = new Scanner(personFile);
