@@ -4,8 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
-public class Person {
-
+public class Person implements INameable{
     /**
      *Az adott ember keresztneve
      */
@@ -19,11 +18,8 @@ public class Person {
      */
     @Getter private int yob;
 
-    /**
-     *Visszaadja az adott ember vezetéknevét és keresztnevét, egy szóközzel elválasztva
-     * @return String
-     */
-    public String getFullName(){
+    @Override
+    public String returnFullName() {
         return lastName + " " + firstName;
     }
 }
